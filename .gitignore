@@ -1,0 +1,22 @@
+# Downloaded font release, re-fetched on demand by scripts/build_fonts.py.
+.cache/
+
+# Intermediate photo crops. The committed portrait.svg is the deliverable;
+# these are just what it was made from.
+.work/
+
+# Local screenshots from scripts/preview.py.
+.preview/
+
+# Source photographs. Deliberately not committed: the ASCII portrait is a
+# drawing you chose to publish, the original selfie is not. Delete this line
+# if you actually want the raw photo in a public repository.
+*.jpg
+*.jpeg
+*.heic
+photo.*
+
+__pycache__/
+*.pyc
+.venv/
+venv/

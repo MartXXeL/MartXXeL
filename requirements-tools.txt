@@ -1,0 +1,25 @@
+# Only needed on your machine, and only for the two things built once:
+# the font slices and the ASCII portrait.
+#
+# The nightly workflow installs NOTHING. github_data.py, render.py,
+# make_identity.py, make_readme.py and check_markdown.py are standard library
+# only, on purpose -- a scheduled job that pip-installs is a scheduled job that
+# eventually fails on somebody else's release.
+#
+#   pip install -r requirements-tools.txt
+
+# --- font subsetting (scripts/build_fonts.py) ---
+fonttools>=4.53
+brotli>=1.1
+
+# --- photo -> ASCII (scripts/prep_photo.py, scripts/make_portrait.py) ---
+pillow>=10.4
+numpy>=1.26
+# Pinned below 5: OpenCV 5 dropped objdetect from the headless wheel, and with
+# it the Haar cascade that finds the face to crop around.
+opencv-python-headless>=4.10,<5
+rembg>=2.0
+onnxruntime>=1.18
+
+# --- preview screenshots (scripts/preview.py), optional ---
+playwright>=1.44

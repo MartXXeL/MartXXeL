@@ -1,0 +1,68 @@
+name: refresh
+
+on:
+  schedule:
+    # 05:17 UTC. An odd minute on purpose: the top of the hour is when every
+    # scheduled job on GitHub queues at once and starts running late.
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+  # Deliberately no `push` trigger. This job commits, and a push trigger would
+  # re-run it on its own commit, forever.
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # No pip install step, and that is the point: everything this job runs
+      # uses the standard library only. The font slices and the ASCII portrait
+      # are committed assets, built once on a laptop by scripts that do need
+      # dependencies. Nothing here can break because a package changed.
+
+      - name: Collect
+        env:
+          # The built-in token returns the same numbers a personal access token
+          # would. `privacy: PUBLIC` in the query is what keeps them the same:
+          # your own token can see private repositories, this one cannot, and
+          # without the filter the language percentages disagree depending on
+          # who ran it.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python scripts/github_data.py
+
+      - name: Draw
+        run: |
+          python scripts/render.py
+          python scripts/make_identity.py
+          python scripts/make_readme.py
+
+      - name: Verify the markup survives GitHub's sanitiser
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/check_markdown.py
+
+      - name: Commit, but only if something actually changed
+        run: |
+          FILES="README.md data/profile.json banner.svg card.svg heatmap.svg \
+                 stats.svg rhythm.svg langs.svg h-*.svg"
+          if [ -z "$(git status --porcelain -- $FILES)" ]; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- $FILES
+          git commit -m "stats: refresh [skip ci]"
+          git push

@@ -1,0 +1,90 @@
+{
+  "_comment": "Todo el texto escrito a mano de la página vive aquí. Edítalo y ejecuta `python scripts/make_identity.py`. Nada de esto se genera solo: son las cosas que ninguna API sabe de ti.",
+
+  "handle": "martxel",
+  "host": "github",
+  "name": "Martxel Asteinza",
+  "tagline": "Automatizo lo que ya he hecho dos veces a mano.",
+  "prompt": "cat ~/.profile",
+
+  "rows": [
+    { "key": "estudio", "value": "Ingeniería Informática · Universidad de Deusto" },
+    { "key": "uptime", "value": "en GitHub desde septiembre de 2024" },
+    { "key": "shell", "value": "python 3.12 · java · sql · bash" },
+    {
+      "key": "construyo",
+      "value": "Telescraperra",
+      "sub": "telethon + gemini vision + playwright/camoufox"
+    },
+    {
+      "key": "aprendo",
+      "value": "pwn.college",
+      "sub": "explotación de binarios · CTF"
+    },
+    { "key": "me interesa", "value": "scraping · OSINT · seguridad ofensiva" }
+  ],
+
+  "_contact": "Vacío a propósito: tu correo ya es público en el historial de commits, pero ponerlo aquí lo entrega además a cualquier scraper que recorra perfiles. Rellénalo solo si lo quieres.",
+  "contact": "",
+
+  "_identities": "Los correos con los que firmas commits. Se agrupa por correo y no por nombre porque la misma persona aparece con varias grafías en el historial (Markel Bugallo / Markel Bugallo Gonzalez, Ander Barandiaran / AnderBarandiaran). Si alguna vez firmaste con otro correo, añádelo aquí o esos commits no se contarán como tuyos.",
+  "identities": [
+    "martxel.asteinza@opendeusto.es"
+  ],
+
+  "_collaborations": "Proyectos de la carrera. `repo` tiene que ser owner/nombre exacto: de ahí salen en vivo tus commits, los de todo el equipo y las fechas. `stack` se escribe a mano a propósito — GitHub etiqueta el lenguaje por bytes y se equivoca (a Concesionario, que es un Django, lo llama «CSS» porque pesan más las hojas de estilo).",
+
+  "collaborations": [
+    {
+      "repo": "AnderBarandiaran/ProyectoProg3",
+      "course": "Programación III",
+      "stack": "java · swing · csv",
+      "what": "Catálogo de biblioteca de escritorio: búsqueda y ordenación de libros por género, base de usuarios en CSV y caché binaria por título."
+    },
+    {
+      "repo": "LanderGuirles/deustoSport",
+      "course": "Ingeniería del Software",
+      "stack": "java · spring boot · thymeleaf · postgresql",
+      "what": "Reservas de instalaciones deportivas en tres capas, con QR en las reservas confirmadas. Equipo de siete personas con metodología SCRUM."
+    },
+    {
+      "repo": "markelbugallo/DeustoShop",
+      "course": "Programación IV",
+      "stack": "c · c++ · sockets",
+      "what": "Tienda online con arquitectura cliente–servidor–administrador: dos aplicaciones independientes contra un servidor central que gestiona toda la comunicación."
+    },
+    {
+      "repo": "LanderGuirles/Concesionario",
+      "course": "Programación web",
+      "stack": "python · django · html/css",
+      "what": "Web de concesionario en Django: modelos, formularios, vistas y panel de administración."
+    },
+    {
+      "repo": "markelbugallo/rpi-access-control",
+      "course": "Sistemas empotrados",
+      "stack": "python · raspberry pi · gpio",
+      "what": "Control de acceso físico: autenticación por patrón rítmico sobre un solo botón, sensor PIR con filtro de falsos positivos y administración web remota."
+    },
+    {
+      "repo": "MartXXeL/EcoembesSD",
+      "course": "Diseño de Software",
+      "stack": "java · patrones de diseño",
+      "what": "Modelado del dominio de reciclaje de Ecoembes aplicando patrones en serio en lugar de por cumplir el enunciado."
+    },
+    {
+      "repo": "MartXXeL/Seguro-partes",
+      "course": "Proyecto propio",
+      "stack": "python · flask · sqlite",
+      "what": "PartesYa: apertura de partes de incidencia del hogar para una aseguradora, con formulario de cuatro pasos que adapta las preguntas al tipo de daño, adjunto de fotos y panel de perito con estados y notas."
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Telescraperra",
+      "meta": "python · playwright · gemini · privado",
+      "what": "Bot de Telegram que detecta tips de apuestas en texto e imagen con un clasificador de visión, localiza cada partido en Winamax con Playwright + Camoufox, monta el cupón, lo valida con IA contra el aviso original y lo deja esperando un clic humano.",
+      "why": "Es el proyecto en el que aprendí que la parte difícil no era el scraping, sino decidir qué hace el sistema cuando no está seguro."
+    }
+  ]
+}
