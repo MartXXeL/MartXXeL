@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./banner.svg" width="860" alt="Martxel Asteinza — Automatizo lo que ya he hecho dos veces a mano.">
+  <img src="./banner.svg" width="860" alt="Martxel Asteinza — Estudiante de ingeniería informática en la universidad de Deusto.">
 </div>
 
 <img src="./h-whoami.svg" width="860" alt="whoami">
@@ -38,10 +38,9 @@ deja esperando un clic humano.
 
 <img src="./h-uni.svg" width="860" alt="uni">
 
-> Casi todos son de otra gente: en la carrera se trabaja en equipo y el<br>
-> repositorio es de quien lo crea. Por eso de cada uno sale la única cifra<br>
-> honesta que se puede dar sobre el repositorio de otro — cuántos de los<br>
-> commits son míos.
+> En la carrera se trabaja en equipo y el repositorio es de quien lo crea.<br>
+> Aquí su muestran mis contribuciones en aquellos repositorios en los que <br>
+> he trabajado.
 
 <img src="./uni.svg" width="860" alt="Proyectos de carrera y participación en cada uno">
 
