@@ -54,8 +54,8 @@ corresponde al elemento sobre el que se actuó, lo deshace y reintenta; si no<br
 puede deshacerlo, aborta en vez de seguir operando sobre una página que ya<br>
 no es la que se creía.
 
-> Nació de la parte de Telescraperra que más costó: en una lista virtualizada,<br>
-> React recicla el nodo entre que lo localizas y lo clicas, así que el clic no<br>
+> En una lista virtualizada, React recicla el nodo<br>
+> entre que lo localizas y lo clicas, así que el clic no<br>
 > da error y aun así añade otra cosa. Los healer agents reparan selectores<br>
 > rotos; esto persigue el fallo contrario, el que no rompe nada.
 
