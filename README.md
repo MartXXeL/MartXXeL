@@ -37,21 +37,14 @@ deja esperando un clic humano.
 
 > Es el proyecto en el que aprendí que la parte difícil no era el scraping,<br>
 > sino decidir qué hace el sistema cuando no está seguro.<br>
-<br>
-> **TelegramBot** &nbsp;<sub>python · telethon · gemini · sqlite</sub>
+
+> **TelegramBot** &nbsp;<sub>python · telethon · gemini · sqlite</sub><br>
 > La primera parte de Telescraperra, y la única pública: escucha los grupos<br>
 > seleccionados y manda cada mensaje entero —texto, captura o ambos— al<br>
 > clasificador de visión, que decide él solo si hay un tip que todavía se<br>
 > puede jugar. Lo que encuentra lo guarda en SQLite y lo avisa por un bot de<br>
 > Telegram.
 
-
-
-> Aquí no hay listas de palabras clave ni umbrales de confianza: se quitaron<br>
-> todos, porque cada criterio que añadía yo por encima del clasificador servía<br>
-> para descartar mensajes que estaban bien. La segunda parte —encontrar el<br>
-> partido, montar el cupón y validarlo— está terminada, pero ese repositorio<br>
-> sigue cerrado.
 
 <img src="./h-universidad.svg" width="860" alt="universidad">
 
