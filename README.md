@@ -47,15 +47,6 @@ deja esperando un clic humano.
 
 <img src="./h-how.svg" width="860" alt="how">
 
-> Ninguna imagen de esta página viene de un servidor ajeno. Ni tarjetas de<br>
-> estadísticas, ni gráficos de actividad, ni la serpiente de contribuciones.<br>
-> Todo lo dibuja este mismo repositorio, cada noche, y se guarda aquí dentro.
-
-El motivo es prosaico: esas tarjetas se caen. Y aunque no se cayeran, no<br>
-puedes diseñarlas — te dan la lista de temas de otro, y la página acaba<br>
-pareciendo cinco páginas. Generarlas aquí cuesta un script y devuelve el<br>
-control de cada píxel.
-
 <details>
 <summary>Cómo está hecho, por dentro</summary>
 
