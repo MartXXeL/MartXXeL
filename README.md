@@ -36,24 +36,54 @@ Camoufox, monta el cupón, lo valida con IA contra el aviso original y lo<br>
 deja esperando un clic humano.
 
 > Es el proyecto en el que aprendí que la parte difícil no era el scraping,<br>
-> sino decidir qué hace el sistema cuando no está seguro.<br>
+> sino decidir qué hace el sistema cuando no está seguro.
 
-> **TelegramBot** &nbsp;<sub>python · telethon · gemini · sqlite</sub><br>
-> La primera parte de Telescraperra, y la única pública: escucha los grupos<br>
-> seleccionados y manda cada mensaje entero —texto, captura o ambos— al<br>
-> clasificador de visión, que decide él solo si hay un tip que todavía se<br>
-> puede jugar. Lo que encuentra lo guarda en SQLite y lo avisa por un bot de<br>
-> Telegram.
+**ActionProof** &nbsp;<sub>python · playwright · gemini · mit</sub>
 
+Librería que comprueba que cada acción de navegador hizo lo que pretendía.<br>
+Compara el estado semántico de la página antes y después, y si el efecto no<br>
+corresponde al elemento sobre el que se actuó, lo deshace y reintenta; si no<br>
+puede deshacerlo, aborta en vez de seguir operando sobre una página que ya<br>
+no es la que se creía.
+
+> Nació de la parte de Telescraperra que más costó: en una lista virtualizada,<br>
+> React recicla el nodo entre que lo localizas y lo clicas, así que el clic no<br>
+> da error y aun así añade otra cosa. Los healer agents reparan selectores<br>
+> rotos; esto persigue el fallo contrario, el que no rompe nada.
+
+**TelegramBot** &nbsp;<sub>python · telethon · gemini · sqlite</sub>
+
+La primera parte de Telescraperra, y la única pública: escucha los grupos de<br>
+apuestas y manda cada mensaje entero —texto, captura o ambos— al<br>
+clasificador de visión, que decide él solo si hay una apuesta que todavía se<br>
+puede jugar. Lo que encuentra lo guarda en SQLite y lo avisa por un bot de<br>
+Telegram.
+
+> Aquí no hay listas de palabras clave ni umbrales de confianza: se quitaron<br>
+> todos, porque cada criterio que añadía yo por encima del clasificador servía<br>
+> para descartar mensajes que estaban bien. La segunda parte —encontrar el<br>
+> partido, montar el cupón y validarlo— está terminada, pero ese repositorio<br>
+> sigue cerrado.
 
 <img src="./h-universidad.svg" width="860" alt="universidad">
 
-> En la carrera se trabaja en equipo y el repositorio es de quien lo crea.<br>
-> Estas son mis contribuciones en cada una de ellas:<br>
+> Casi todos son de otra gente: en la carrera se trabaja en equipo y el<br>
+> repositorio es de quien lo crea. Por eso de cada uno sale la única cifra<br>
+> honesta que se puede dar sobre el repositorio de otro — cuántos de los<br>
+> commits son míos.
 
 <img src="./universidad.svg" width="860" alt="Proyectos de carrera y participación en cada uno">
 
 <img src="./h-how.svg" width="860" alt="how">
+
+> Ninguna imagen de esta página viene de un servidor ajeno. Ni tarjetas de<br>
+> estadísticas, ni gráficos de actividad, ni la serpiente de contribuciones.<br>
+> Todo lo dibuja este mismo repositorio, cada noche, y se guarda aquí dentro.
+
+El motivo es prosaico: esas tarjetas se caen. Y aunque no se cayeran, no<br>
+puedes diseñarlas — te dan la lista de temas de otro, y la página acaba<br>
+pareciendo cinco páginas. Generarlas aquí cuesta un script y devuelve el<br>
+control de cada píxel.
 
 <details>
 <summary>Cómo está hecho, por dentro</summary>
