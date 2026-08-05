@@ -46,7 +46,7 @@ deja esperando un clic humano.
 > puede jugar. Lo que encuentra lo guarda en SQLite y lo avisa por un bot de<br>
 > Telegram.
 
-**ActionProof** &nbsp;<sub>python · playwright · gemini · mit</sub>
+**ActionPrufe** &nbsp;<sub>python · playwright · gemini · mit</sub>
 
 Librería que comprueba que cada acción de navegador hizo lo que pretendía.<br>
 Compara el estado semántico de la página antes y después, y si el efecto no<br>

@@ -112,7 +112,7 @@
       "why": "Es el proyecto en el que aprendí que la parte difícil no era el scraping, sino decidir qué hace el sistema cuando no está seguro."
     },
     {
-      "name": "ActionProof",
+      "name": "ActionPrufe",
       "meta": "python · playwright · gemini · mit",
       "what": "Librería que comprueba que cada acción de navegador hizo lo que pretendía. Compara el estado semántico de la página antes y después, y si el efecto no corresponde al elemento sobre el que se actuó, lo deshace y reintenta; si no puede deshacerlo, aborta en vez de seguir operando sobre una página que ya no es la que se creía.",
       "why": "Nació de la parte de Telescraperra que más costó: en una lista virtualizada, React recicla el nodo entre que lo localizas y lo clicas, así que el clic no da error y aun así añade otra cosa. Los healer agents reparan selectores rotos; esto persigue el fallo contrario, el que no rompe nada."
