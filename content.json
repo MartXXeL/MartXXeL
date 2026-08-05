@@ -4,7 +4,7 @@
   "handle": "martxel",
   "host": "github",
   "name": "Martxel Asteinza",
-  "tagline": "Estudiante de ingeniería informática en la universidad de Deusto.",
+  "tagline": "Estudiante de Ingeniería Informática en la Universidad de Deusto.",
   "prompt": "cat ~/.profile",
 
   "rows": [
@@ -17,6 +17,36 @@
       "sub": "telethon + gemini vision + playwright/camoufox"
     },
     { "key": "me interesa", "value": "scraping · OSINT · seguridad ofensiva" }
+  ],
+
+  "_stack": "Las chapas, dibujadas por este repositorio en vez de pedidas a shields.io: un servidor externo aquí significa una fila de imágenes rotas el día que falle, que es exactamente lo que esta página evita. Solo hay tecnologías con rastro en algún repositorio; si añades una, añade también el proyecto donde la usaste. Algunos colores de marca (Django, SQLite, Flask, Thymeleaf) están aclarados respecto al oficial porque el original es casi negro y desaparece sobre fondo oscuro.",
+  "stack": [
+    { "name": "Java", "color": "#b07219" },
+    { "name": "Python", "color": "#3572A5" },
+    { "name": "C", "color": "#8f8f8f" },
+    { "name": "C++", "color": "#f34b7d" },
+    { "name": "SQL", "color": "#e38c00" },
+    { "name": "JavaScript", "color": "#f1e05a" },
+    { "name": "HTML", "color": "#e34c26" },
+    { "name": "CSS", "color": "#8b6bd6" },
+    { "name": "Bash", "color": "#89e051" },
+
+    { "name": "Spring Boot", "color": "#6DB33F" },
+    { "name": "Thymeleaf", "color": "#4a9c53" },
+    { "name": "Django", "color": "#3f9c74" },
+    { "name": "Flask", "color": "#9aa0a6" },
+    { "name": "Swing", "color": "#d08a2e" },
+    { "name": "Playwright", "color": "#2EAD33" },
+    { "name": "Pydantic", "color": "#E92063" },
+    { "name": "Telethon", "color": "#2CA5E0" },
+
+    { "name": "PostgreSQL", "color": "#4a86c5" },
+    { "name": "SQLite", "color": "#3ea6dd" },
+
+    { "name": "Git", "color": "#F05032" },
+    { "name": "GitHub Actions", "color": "#2088FF" },
+    { "name": "Linux", "color": "#FCC624" },
+    { "name": "Raspberry Pi", "color": "#C7365F" }
   ],
 
   "_contact": "Vacío a propósito: tu correo ya es público en el historial de commits, pero ponerlo aquí lo entrega además a cualquier scraper que recorra perfiles. Rellénalo solo si lo quieres.",

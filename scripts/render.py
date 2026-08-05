@@ -458,10 +458,63 @@ def uni(p: dict, content: dict) -> None:
         )
     )
     write(
-        "uni.svg",
+        "universidad.svg",
         document(W_FULL, y - 12, "".join(body), css, ("ui", "ui-bold"),
                  title="Proyectos de carrera y participación en cada uno"),
     )
+
+def stack(content: dict) -> None:
+    items = content.get("stack", [])
+    if not items:
+        return
+
+    fs, dot, pad_x, gap_x, gap_y, ph = 11.5, 5, 11, 7, 9, 25
+    rows, line, x = [], [], 0.0
+    for it in items:
+        w = pad_x * 2 + dot + 7 + len(it["name"]) * fs * 0.6
+        if line and x + w > W_FULL:
+            rows.append(line)
+            line, x = [], 0.0
+        line.append((it, x, w))
+        x += w + gap_x
+    if line:
+        rows.append(line)
+
+    body, i = [], 0
+    for r, line in enumerate(rows):
+        used = sum(w for _, _, w in line) + gap_x * (len(line) - 1)
+        off = (W_FULL - used) / 2
+        y = r * (ph + gap_y)
+        for it, lx, w in line:
+            i += 1
+            cx = off + lx
+            body.append(
+                f'<g class="pl" style="animation-delay:{0.15 + i * 0.028:.3f}s">'
+                f'<rect x="{cx:.1f}" y="{y}" width="{w:.1f}" height="{ph}" rx="{ph / 2}" '
+                f'fill="{it["color"]}" fill-opacity=".10" stroke="{it["color"]}" '
+                f'stroke-opacity=".45"/>'
+                f'<circle cx="{cx + pad_x + dot / 2:.1f}" cy="{y + ph / 2}" r="{dot / 2}" '
+                f'fill="{it["color"]}"/>'
+                f'<text class="tx" x="{cx + pad_x + dot + 7:.1f}" y="{y + ph / 2 + 4}">'
+                f'{esc(it["name"])}</text></g>'
+            )
+
+    css = (
+        f".tx{{font-size:{fs}px;fill:var(--ink)}}"
+        + anim(
+            "@keyframes pl{from{opacity:0;transform:translateY(5px) scale(.94)}"
+            "to{opacity:1;transform:none}}"
+            f".pl{{transform-box:fill-box;transform-origin:center;"
+            f"animation:pl .45s cubic-bezier(.2,.8,.3,1.1);{PLAY_ONCE}}}"
+        )
+    )
+    h = len(rows) * (ph + gap_y) - gap_y
+    write(
+        "stack.svg",
+        document(W_FULL, h, "".join(body), css, ("ui",),
+                 title="Tecnologías: " + ", ".join(i["name"] for i in items)),
+    )
+
 
 def main() -> int:
     if not DATA.exists():
@@ -475,13 +528,14 @@ def main() -> int:
     rhythm(p)
     langs(p)
     uni(p, content)
+    stack(content)
 
     n = len(p.get("collaborations", []))
     heading("whoami", "whoami", "quién hay detrás")
     heading("stats", "stats", "generadas por este repo, cada noche")
     heading("year", "year", f'{p["window"]["from"]} → {p["window"]["to"]}')
     heading("work", "work", "lo que estoy construyendo")
-    heading("uni", "uni", f"{n} proyectos en Deusto" if n else "Deusto")
+    heading("universidad", "universidad", f"{n} proyectos" if n else "Deusto")
     heading("how", "how", "cómo se dibuja esta página")
     return 0
 

@@ -47,6 +47,8 @@ def build(c: dict, p: dict) -> str:
         f'{img("portrait.svg", intrinsic_width("portrait.svg"), f"Retrato ASCII de {c["name"]}")}\n</div>'
     )
     out.append(img("card.svg", W_FULL, f"Ficha de {c['name']}"))
+    if (ROOT / "stack.svg").exists():
+        out.append(img("stack.svg", W_FULL, "Tecnologías con las que he trabajado"))
 
     out.append(section("stats", "stats"))
     out.append(
@@ -71,7 +73,7 @@ def build(c: dict, p: dict) -> str:
         out.append("\n".join(block))
 
     if p.get("collaborations"):
-        out.append(section("uni", "uni"))
+        out.append(section("universidad", "universidad"))
         out.append(
             "> "
             + wrap(
@@ -81,7 +83,7 @@ def build(c: dict, p: dict) -> str:
                 "commits son míos."
             ).replace("<br>\n", "<br>\n> ")
         )
-        out.append(img("uni.svg", W_FULL, "Proyectos de carrera y participación en cada uno"))
+        out.append(img("universidad.svg", W_FULL, "Proyectos de carrera y participación en cada uno"))
 
     out.append(section("how", "how"))
     out.append(

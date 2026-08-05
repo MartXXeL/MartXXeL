@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./banner.svg" width="860" alt="Martxel Asteinza — Estudiante de ingeniería informática en la universidad de Deusto.">
+  <img src="./banner.svg" width="860" alt="Martxel Asteinza — Estudiante de Ingeniería Informática en la Universidad de Deusto.">
 </div>
 
 <img src="./h-whoami.svg" width="860" alt="whoami">
@@ -9,6 +9,8 @@
 </div>
 
 <img src="./card.svg" width="860" alt="Ficha de Martxel Asteinza">
+
+<img src="./stack.svg" width="860" alt="Tecnologías con las que he trabajado">
 
 <img src="./h-stats.svg" width="860" alt="stats">
 
@@ -36,13 +38,14 @@ deja esperando un clic humano.
 > Es el proyecto en el que aprendí que la parte difícil no era el scraping,<br>
 > sino decidir qué hace el sistema cuando no está seguro.
 
-<img src="./h-uni.svg" width="860" alt="uni">
+<img src="./h-universidad.svg" width="860" alt="universidad">
 
-> En la carrera se trabaja en equipo y el repositorio es de quien lo crea.<br>
-> Aquí su muestran mis contribuciones en aquellos repositorios en los que <br>
-> he trabajado.
+> Casi todos son de otra gente: en la carrera se trabaja en equipo y el<br>
+> repositorio es de quien lo crea. Por eso de cada uno sale la única cifra<br>
+> honesta que se puede dar sobre el repositorio de otro — cuántos de los<br>
+> commits son míos.
 
-<img src="./uni.svg" width="860" alt="Proyectos de carrera y participación en cada uno">
+<img src="./universidad.svg" width="860" alt="Proyectos de carrera y participación en cada uno">
 
 <img src="./h-how.svg" width="860" alt="how">
 

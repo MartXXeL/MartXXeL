@@ -56,7 +56,7 @@ jobs:
       - name: Commit, but only if something actually changed
         run: |
           FILES="README.md data/profile.json banner.svg card.svg heatmap.svg \
-                 stats.svg rhythm.svg langs.svg h-*.svg"
+                 stats.svg rhythm.svg langs.svg universidad.svg stack.svg h-*.svg"
           if [ -z "$(git status --porcelain -- $FILES)" ]; then
             echo "nothing changed"
             exit 0
