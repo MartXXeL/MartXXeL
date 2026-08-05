@@ -4,7 +4,7 @@
   "handle": "martxel",
   "host": "github",
   "name": "Martxel Asteinza",
-  "tagline": "Automatizo lo que ya he hecho dos veces a mano.",
+  "tagline": "Estudiante de ingeniería informática en la universidad de Deusto.",
   "prompt": "cat ~/.profile",
 
   "rows": [
@@ -15,11 +15,6 @@
       "key": "construyo",
       "value": "Telescraperra",
       "sub": "telethon + gemini vision + playwright/camoufox"
-    },
-    {
-      "key": "aprendo",
-      "value": "pwn.college",
-      "sub": "explotación de binarios · CTF"
     },
     { "key": "me interesa", "value": "scraping · OSINT · seguridad ofensiva" }
   ],
