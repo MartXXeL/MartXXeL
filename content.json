@@ -110,6 +110,12 @@
       "meta": "python · playwright · gemini · privado",
       "what": "Bot de Telegram que detecta tips de apuestas en texto e imagen con un clasificador de visión, localiza cada partido en Winamax con Playwright + Camoufox, monta el cupón, lo valida con IA contra el aviso original y lo deja esperando un clic humano.",
       "why": "Es el proyecto en el que aprendí que la parte difícil no era el scraping, sino decidir qué hace el sistema cuando no está seguro."
+    },
+    {
+      "name": "TelegramBot",
+      "meta": "python · telethon · gemini · sqlite",
+      "what": "La primera parte de Telescraperra, y la única pública: escucha los grupos de apuestas y manda cada mensaje entero —texto, captura o ambos— al clasificador de visión, que decide él solo si hay una apuesta que todavía se puede jugar. Lo que encuentra lo guarda en SQLite y lo avisa por un bot de Telegram.",
+      "why": "Aquí no hay listas de palabras clave ni umbrales de confianza: se quitaron todos, porque cada criterio que añadía yo por encima del clasificador servía para descartar mensajes que estaban bien. La segunda parte —encontrar el partido, montar el cupón y validarlo— está terminada, pero ese repositorio sigue cerrado."
     }
   ]
 }
