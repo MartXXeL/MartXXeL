@@ -40,10 +40,8 @@ deja esperando un clic humano.
 
 <img src="./h-universidad.svg" width="860" alt="universidad">
 
-> Casi todos son de otra gente: en la carrera se trabaja en equipo y el<br>
-> repositorio es de quien lo crea. Por eso de cada uno sale la única cifra<br>
-> honesta que se puede dar sobre el repositorio de otro — cuántos de los<br>
-> commits son míos.
+> En la carrera se trabaja en equipo y el repositorio es de quien lo crea.<br>
+> Estas son mis contribuciones en cada una de ellas:<br>
 
 <img src="./universidad.svg" width="860" alt="Proyectos de carrera y participación en cada uno">
 
