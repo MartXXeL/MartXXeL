@@ -20,14 +20,23 @@ def intrinsic_width(name: str, cap: int = W_FULL) -> int:
 MEASURE = 76
 
 def wrap(text: str) -> str:
+    # Un salto de línea en el texto fuente es un corte que pediste tú: se
+    # respeta tal cual, y lo que va entre dos cortes se sigue ajustando a la
+    # medida. Sin esto no hay forma de escribir un párrafo con una línea corta
+    # a propósito, porque el ajuste automático la rellenaría.
     return "<br>\n".join(
-        textwrap.wrap(
-            " ".join(text.split()),
+        line
+        for chunk in text.split("\n")
+        for line in textwrap.wrap(
+            " ".join(chunk.split()),
             MEASURE,
             break_on_hyphens=False,
             break_long_words=False,
         )
     )
+
+def quote(text: str) -> str:
+    return "> " + wrap(text).replace("<br>\n", "<br>\n> ")
 
 def img(src: str, width: int, alt: str) -> str:
     return f'<img src="./{src}" width="{width}" alt="{alt}">'
@@ -67,41 +76,27 @@ def build(c: dict, p: dict) -> str:
 
     out.append(section("work", "work"))
     for proj in c["projects"]:
-        block = [f'**{proj["name"]}** &nbsp;<sub>{proj["meta"]}</sub>', "", wrap(proj["what"])]
+        # `quoted` baja el proyecto a un segundo plano: todo el bloque va dentro
+        # de una cita, no solo el porqué. Es para los que cuelgan de otro.
+        if proj.get("quoted"):
+            block = [f'> **{proj["name"]}** &nbsp;<sub>{proj["meta"]}</sub><br>', "", quote(proj["what"])]
+        else:
+            block = [f'**{proj["name"]}** &nbsp;<sub>{proj["meta"]}</sub>', "", wrap(proj["what"])]
         if proj.get("why"):
-            block += ["", "> " + wrap(proj["why"]).replace("<br>\n", "<br>\n> ")]
+            block += ["", quote(proj["why"])]
         out.append("\n".join(block))
 
     if p.get("collaborations"):
         out.append(section("universidad", "universidad"))
         out.append(
-            "> "
-            + wrap(
-                "Casi todos son de otra gente: en la carrera se trabaja en equipo y el "
-                "repositorio es de quien lo crea. Por eso de cada uno sale la única cifra "
-                "honesta que se puede dar sobre el repositorio de otro — cuántos de los "
-                "commits son míos."
-            ).replace("<br>\n", "<br>\n> ")
+            quote(
+                "En la carrera se trabaja en equipo y el repositorio es de quien lo "
+                "crea. Estas son mis contribuciones en cada una de ellas:<br>"
+            )
         )
         out.append(img("universidad.svg", W_FULL, "Proyectos de carrera y participación en cada uno"))
 
     out.append(section("how", "how"))
-    out.append(
-        "> "
-        + wrap(
-            "Ninguna imagen de esta página viene de un servidor ajeno. Ni tarjetas de "
-            "estadísticas, ni gráficos de actividad, ni la serpiente de contribuciones. "
-            "Todo lo dibuja este mismo repositorio, cada noche, y se guarda aquí dentro."
-        ).replace("<br>\n", "<br>\n> ")
-    )
-    out.append(
-        wrap(
-            "El motivo es prosaico: esas tarjetas se caen. Y aunque no se cayeran, no "
-            "puedes diseñarlas — te dan la lista de temas de otro, y la página acaba "
-            "pareciendo cinco páginas. Generarlas aquí cuesta un script y devuelve el "
-            "control de cada píxel."
-        )
-    )
     out.append(
         "\n".join(
             [
