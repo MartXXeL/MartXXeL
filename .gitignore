@@ -8,13 +8,18 @@
 # Local screenshots from scripts/preview.py.
 .preview/
 
-# Source photographs. Deliberately not committed: the ASCII portrait is a
-# drawing you chose to publish, the original selfie is not. Delete this line
-# if you actually want the raw photo in a public repository.
+# Source photographs. Deliberately not committed: el dibujo ASCII es algo que
+# eliges publicar, la foto original no. Borra estas líneas si de verdad quieres
+# la foto cruda en un repositorio público.
 *.jpg
 *.jpeg
 *.heic
 photo.*
+
+# La excepción: la foto de la que sale portrait.svg. No es tuya ni es privada,
+# es de Wikimedia con licencia libre, y sin ella el dibujo no se puede volver
+# a generar. Su autoría está en content.json.
+!assets/portrait-source.jpg
 
 __pycache__/
 *.pyc

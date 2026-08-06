@@ -2,10 +2,8 @@
   <img src="./banner.svg" width="860" alt="Martxel Asteinza — Estudiante de Ingeniería Informática en la Universidad de Deusto.">
 </div>
 
-<img src="./h-whoami.svg" width="860" alt="whoami">
-
 <div align="center">
-  <img src="./portrait.svg" width="860" alt="Retrato ASCII de Martxel Asteinza">
+  <img src="./portrait.svg" width="860" alt="Mercedes-Benz 190E de perfil, dibujado en ASCII">
 </div>
 
 <img src="./card.svg" width="860" alt="Ficha de Martxel Asteinza">
@@ -74,12 +72,17 @@ cualquier script. Lo que no toca es el interior de un SVG servido como<br>
 imagen, porque es otro documento. Así que todo el estilo y todo el<br>
 movimiento viven ahí dentro.
 
-El retrato es una foto reducida a una rejilla de 90 columnas sobre una rampa<br>
+El coche es una foto reducida a una rejilla de 160 columnas sobre una rampa<br>
 de trece caracteres. Cada fila se dibuja dentro de un <samp>clipPath</samp><br>
 cuyo rectángulo crece de cero a su ancho en pasos discretos, con un cursor<br>
 cabalgando el borde; las filas se escalonan de arriba abajo y todo termina<br>
 con <samp>fill-mode: both</samp>, así que se escribe una vez y se queda<br>
 quieto. Nada en esta página hace bucle.
+
+La foto de la que sale es [un 190E 2.6 de 1987](https://commons.wikimedia.org/wiki/File:1987_Mercedes_Benz_190_E_(W201)_2.6_sedan_(24084486981).jpg)<br>
+de Jeremy, de Sídney, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) vía Wikimedia Commons. Está en<br>
+<samp>assets/portrait-source.jpg</samp>, y el dibujo se rehace con<br>
+<samp>python scripts/build.py --portrait assets/portrait-source.jpg</samp>.
 
 Lleva dos rampas. La estándar convierte lo oscuro en caracteres densos:<br>
 correcto sobre fondo claro, y un negativo fotográfico sobre fondo oscuro,<br>
@@ -90,7 +93,7 @@ GitHub. Aquí se generan los dos mapeos y se conmutan con<br>
 La tipografía es JetBrains Mono incrustada en base64 dentro de cada archivo.<br>
 Una URL externa no funcionaría: los navegadores no cargan subrecursos para<br>
 documentos que son imágenes. Cada SVG lleva solo los glifos que usa — trece<br>
-caracteres para el retrato — y el total son 13 KB en lugar de los 4,5 MB que<br>
+caracteres para el coche — y el total son 13 KB en lugar de los 4,5 MB que<br>
 costaría incrustar la fuente entera en cada uno.
 
 Las cifras salen de la API de GitHub con la ventana fijada a días UTC<br>

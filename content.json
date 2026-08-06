@@ -7,6 +7,18 @@
   "tagline": "Estudiante de Ingeniería Informática en la Universidad de Deusto.",
   "prompt": "cat ~/.profile",
 
+  "_portrait_alt": "Texto alternativo del dibujo ASCII. Va a mano porque el dibujo dejó de ser un retrato: descríbelo por lo que se ve.",
+  "portrait_alt": "Mercedes-Benz 190E de perfil, dibujado en ASCII",
+
+  "_portrait_credit": "La foto de la que sale portrait.svg. Es CC BY, así que la atribución no es cortesía: es la condición de la licencia. Si cambias la foto, cambia esto en el mismo commit.",
+  "portrait_credit": {
+    "what": "un 190E 2.6 de 1987",
+    "author": "Jeremy, de Sídney",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:1987_Mercedes_Benz_190_E_(W201)_2.6_sedan_(24084486981).jpg"
+  },
+
   "rows": [
     { "key": "estudio", "value": "Ingeniería Informática · Universidad de Deusto" },
     { "key": "uptime", "value": "en GitHub desde septiembre de 2024" },

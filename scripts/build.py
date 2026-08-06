@@ -27,14 +27,17 @@ def main() -> int:
         run("scripts/build_fonts.py")
 
     if args.portrait:
-        run(
-            "scripts/prep_photo.py", str(args.portrait),
-            "--no-cutout", "--head-scale", "2.7", "--clahe", "1.6",
-        )
+        # El dibujo es un coche, no una cara: se recorta a su silueta en vez de
+        # cuadrar alrededor de una cabeza. Y 160 columnas, no 120: a 120 el
+        # costado salía como un bloque macizo, y a 160 se separan los cristales,
+        # las llantas y la línea de cintura.
+        run("scripts/prep_photo.py", str(args.portrait),
+            "--object", "--clahe", "2.0", "--size", "1500")
         prepped = ROOT / ".work" / f"{args.portrait.stem.replace(' ', '_')}.prep.png"
         run(
             "scripts/make_portrait.py", str(prepped),
-            "--out", "portrait.svg", "--cols", "120", "--contrast", "1.35",
+            "--out", "portrait.svg", "--cols", "160", "--contrast", "1.35",
+            "--title", "Mercedes-Benz 190E de perfil, dibujado carácter a carácter",
         )
 
     if not args.offline:

@@ -531,7 +531,6 @@ def main() -> int:
     stack(content)
 
     n = len(p.get("collaborations", []))
-    heading("whoami", "whoami", "quién hay detrás")
     heading("stats", "stats", "generadas por este repo, cada noche")
     heading("year", "year", f'{p["window"]["from"]} → {p["window"]["to"]}')
     heading("work", "work", "lo que estoy construyendo")
