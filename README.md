@@ -61,9 +61,6 @@ no es la que se creía.
 
 <img src="./h-universidad.svg" width="860" alt="universidad">
 
-> En la carrera se trabaja en equipo y el repositorio es de quien lo crea.<br>
-> Estas son mis contribuciones en cada una de ellas:<br>
-
 <img src="./universidad.svg" width="860" alt="Proyectos de carrera y participación en cada uno">
 
 <img src="./h-how.svg" width="860" alt="how">
