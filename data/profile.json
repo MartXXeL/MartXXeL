@@ -1,5 +1,11 @@
 {
-  "breakdown": null,
+  "breakdown": {
+    "commits": 89,
+    "issues": 14,
+    "pull_requests": 0,
+    "repos_touched": 9,
+    "reviews": 0
+  },
   "collaborations": [
     {
       "from": "2024-10-11",
@@ -81,22 +87,6 @@
   ],
   "created_at": "2024-09-18",
   "days": [
-    {
-      "count": 0,
-      "date": "2025-08-03"
-    },
-    {
-      "count": 0,
-      "date": "2025-08-04"
-    },
-    {
-      "count": 0,
-      "date": "2025-08-05"
-    },
-    {
-      "count": 0,
-      "date": "2025-08-06"
-    },
     {
       "count": 0,
       "date": "2025-08-07"
@@ -958,7 +948,7 @@
       "date": "2026-03-09"
     },
     {
-      "count": 1,
+      "count": 0,
       "date": "2026-03-10"
     },
     {
@@ -1550,8 +1540,12 @@
       "date": "2026-08-04"
     },
     {
-      "count": 0,
+      "count": 30,
       "date": "2026-08-05"
+    },
+    {
+      "count": 19,
+      "date": "2026-08-06"
     }
   ],
   "followers": 0,
@@ -1560,55 +1554,55 @@
       "bytes": 1287602,
       "color": "#b07219",
       "name": "Java",
-      "pct": 61.2,
+      "pct": 54.9,
       "repos": 3
     },
     {
-      "bytes": 533199,
+      "bytes": 546609,
       "color": "#e34c26",
       "name": "HTML",
-      "pct": 25.4,
-      "repos": 4
+      "pct": 23.3,
+      "repos": 5
     },
     {
-      "bytes": 79775,
+      "bytes": 300540,
       "color": "#3572A5",
       "name": "Python",
-      "pct": 3.8,
-      "repos": 3
+      "pct": 12.8,
+      "repos": 6
     },
     {
       "bytes": 65644,
       "color": "#f34b7d",
       "name": "C++",
-      "pct": 3.1,
+      "pct": 2.8,
       "repos": 1
     },
     {
       "bytes": 61223,
       "color": "#555555",
       "name": "C",
-      "pct": 2.9,
+      "pct": 2.6,
       "repos": 1
     },
     {
       "bytes": 38661,
       "color": "#563d7c",
       "name": "CSS",
-      "pct": 1.8,
+      "pct": 1.6,
       "repos": 2
+    },
+    {
+      "bytes": 20076,
+      "color": "#8b949e",
+      "name": "YAML",
+      "pct": 0.9,
+      "repos": 4
     },
     {
       "bytes": 10960,
       "color": "#e38c00",
       "name": "SQL",
-      "pct": 0.5,
-      "repos": 1
-    },
-    {
-      "bytes": 9487,
-      "color": "#8b949e",
-      "name": "YAML",
       "pct": 0.5,
       "repos": 1
     },
@@ -1635,17 +1629,37 @@
     }
   ],
   "login": "MartXXeL",
-  "name": "Martxel Asteinza Ansola",
+  "name": "Martxel Asteinza",
   "repos": [
     {
       "archived": false,
       "description": "",
       "forks": 0,
-      "language": null,
+      "language": "Python",
+      "name": "ActionPrufe",
+      "pushed_at": "2026-08-05",
+      "stars": 0,
+      "url": "https://github.com/MartXXeL/ActionPrufe"
+    },
+    {
+      "archived": false,
+      "description": "",
+      "forks": 0,
+      "language": "Python",
       "name": "MartXXeL",
       "pushed_at": "2026-08-05",
       "stars": 0,
       "url": "https://github.com/MartXXeL/MartXXeL"
+    },
+    {
+      "archived": false,
+      "description": "",
+      "forks": 0,
+      "language": "Python",
+      "name": "TelegramBot",
+      "pushed_at": "2026-08-05",
+      "stars": 0,
+      "url": "https://github.com/MartXXeL/TelegramBot"
     },
     {
       "archived": false,
@@ -1668,11 +1682,11 @@
       "url": "https://github.com/MartXXeL/EcoembesSD"
     }
   ],
-  "source": "public",
+  "source": "graphql",
   "streak": {
     "current": {
-      "end": "2026-08-04",
-      "length": 3,
+      "end": "2026-08-06",
+      "length": 5,
       "start": "2026-08-02"
     },
     "longest": {
@@ -1682,231 +1696,231 @@
     }
   },
   "totals": {
-    "active_days": 23,
+    "active_days": 24,
     "best_day": {
-      "count": 12,
-      "date": "2026-05-19"
+      "count": 30,
+      "date": "2026-08-05"
     },
-    "repos": 3,
-    "year": 95
+    "repos": 5,
+    "year": 143
   },
   "weeks": [
     {
-      "start": "2025-08-03",
+      "start": "2025-08-07",
       "total": 0
     },
     {
-      "start": "2025-08-10",
+      "start": "2025-08-14",
       "total": 0
     },
     {
-      "start": "2025-08-17",
+      "start": "2025-08-21",
       "total": 0
     },
     {
-      "start": "2025-08-24",
+      "start": "2025-08-28",
       "total": 0
     },
     {
-      "start": "2025-08-31",
+      "start": "2025-09-04",
       "total": 0
     },
     {
-      "start": "2025-09-07",
+      "start": "2025-09-11",
       "total": 0
     },
     {
-      "start": "2025-09-14",
+      "start": "2025-09-18",
       "total": 0
     },
     {
-      "start": "2025-09-21",
+      "start": "2025-09-25",
       "total": 0
     },
     {
-      "start": "2025-09-28",
+      "start": "2025-10-02",
       "total": 0
     },
     {
-      "start": "2025-10-05",
+      "start": "2025-10-09",
       "total": 0
     },
     {
-      "start": "2025-10-12",
+      "start": "2025-10-16",
       "total": 0
     },
     {
-      "start": "2025-10-19",
+      "start": "2025-10-23",
       "total": 0
     },
     {
-      "start": "2025-10-26",
+      "start": "2025-10-30",
       "total": 0
     },
     {
-      "start": "2025-11-02",
-      "total": 0
-    },
-    {
-      "start": "2025-11-09",
+      "start": "2025-11-06",
       "total": 1
     },
     {
-      "start": "2025-11-16",
+      "start": "2025-11-13",
       "total": 0
     },
     {
-      "start": "2025-11-23",
+      "start": "2025-11-20",
       "total": 0
     },
     {
-      "start": "2025-11-30",
+      "start": "2025-11-27",
       "total": 0
     },
     {
-      "start": "2025-12-07",
+      "start": "2025-12-04",
       "total": 2
     },
     {
-      "start": "2025-12-14",
+      "start": "2025-12-11",
       "total": 0
     },
     {
-      "start": "2025-12-21",
+      "start": "2025-12-18",
       "total": 0
     },
     {
-      "start": "2025-12-28",
+      "start": "2025-12-25",
       "total": 0
     },
     {
-      "start": "2026-01-04",
+      "start": "2026-01-01",
       "total": 0
     },
     {
-      "start": "2026-01-11",
+      "start": "2026-01-08",
       "total": 0
     },
     {
-      "start": "2026-01-18",
+      "start": "2026-01-15",
       "total": 0
     },
     {
-      "start": "2026-01-25",
+      "start": "2026-01-22",
       "total": 0
     },
     {
-      "start": "2026-02-01",
+      "start": "2026-01-29",
       "total": 0
     },
     {
-      "start": "2026-02-08",
+      "start": "2026-02-05",
       "total": 0
     },
     {
-      "start": "2026-02-15",
+      "start": "2026-02-12",
       "total": 0
     },
     {
-      "start": "2026-02-22",
+      "start": "2026-02-19",
       "total": 0
     },
     {
-      "start": "2026-03-01",
+      "start": "2026-02-26",
       "total": 2
     },
     {
-      "start": "2026-03-08",
-      "total": 1
-    },
-    {
-      "start": "2026-03-15",
+      "start": "2026-03-05",
       "total": 0
     },
     {
-      "start": "2026-03-22",
+      "start": "2026-03-12",
+      "total": 0
+    },
+    {
+      "start": "2026-03-19",
       "total": 15
     },
     {
-      "start": "2026-03-29",
+      "start": "2026-03-26",
       "total": 0
     },
     {
-      "start": "2026-04-05",
+      "start": "2026-04-02",
       "total": 0
     },
     {
-      "start": "2026-04-12",
+      "start": "2026-04-09",
       "total": 2
     },
     {
-      "start": "2026-04-19",
+      "start": "2026-04-16",
       "total": 0
     },
     {
-      "start": "2026-04-26",
-      "total": 18
+      "start": "2026-04-23",
+      "total": 17
     },
     {
-      "start": "2026-05-03",
+      "start": "2026-04-30",
+      "total": 1
+    },
+    {
+      "start": "2026-05-07",
       "total": 0
     },
     {
-      "start": "2026-05-10",
-      "total": 0
-    },
-    {
-      "start": "2026-05-17",
+      "start": "2026-05-14",
       "total": 14
     },
     {
-      "start": "2026-05-24",
+      "start": "2026-05-21",
       "total": 0
     },
     {
-      "start": "2026-05-31",
+      "start": "2026-05-28",
       "total": 0
     },
     {
-      "start": "2026-06-07",
+      "start": "2026-06-04",
       "total": 0
     },
     {
-      "start": "2026-06-14",
-      "total": 11
-    },
-    {
-      "start": "2026-06-21",
-      "total": 3
-    },
-    {
-      "start": "2026-06-28",
+      "start": "2026-06-11",
       "total": 0
     },
     {
-      "start": "2026-07-05",
+      "start": "2026-06-18",
+      "total": 14
+    },
+    {
+      "start": "2026-06-25",
       "total": 0
     },
     {
-      "start": "2026-07-12",
-      "total": 8
-    },
-    {
-      "start": "2026-07-19",
+      "start": "2026-07-02",
       "total": 0
     },
     {
-      "start": "2026-07-26",
+      "start": "2026-07-09",
+      "total": 1
+    },
+    {
+      "start": "2026-07-16",
+      "total": 7
+    },
+    {
+      "start": "2026-07-23",
       "total": 0
     },
     {
-      "start": "2026-08-02",
-      "total": 18
+      "start": "2026-07-30",
+      "total": 48
+    },
+    {
+      "start": "2026-08-06",
+      "total": 19
     }
   ],
   "window": {
-    "days": 368,
-    "from": "2025-08-03",
-    "to": "2026-08-05"
+    "days": 365,
+    "from": "2025-08-07",
+    "to": "2026-08-06"
   }
 }
