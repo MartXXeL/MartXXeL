@@ -1,9 +1,9 @@
 {
   "breakdown": {
-    "commits": 92,
+    "commits": 121,
     "issues": 14,
     "pull_requests": 0,
-    "repos_touched": 9,
+    "repos_touched": 10,
     "reviews": 0
   },
   "collaborations": [
@@ -87,10 +87,6 @@
   ],
   "created_at": "2024-09-18",
   "days": [
-    {
-      "count": 0,
-      "date": "2025-08-10"
-    },
     {
       "count": 0,
       "date": "2025-08-11"
@@ -1544,8 +1540,12 @@
       "date": "2026-08-08"
     },
     {
-      "count": 0,
+      "count": 30,
       "date": "2026-08-09"
+    },
+    {
+      "count": 0,
+      "date": "2026-08-10"
     }
   ],
   "followers": 1,
@@ -1554,63 +1554,63 @@
       "bytes": 1287602,
       "color": "#b07219",
       "name": "Java",
-      "pct": 54.8,
+      "pct": 48.6,
       "repos": 3
     },
     {
-      "bytes": 546609,
+      "bytes": 573272,
       "color": "#e34c26",
       "name": "HTML",
-      "pct": 23.3,
-      "repos": 5
+      "pct": 21.6,
+      "repos": 6
     },
     {
-      "bytes": 302671,
+      "bytes": 566384,
       "color": "#3572A5",
       "name": "Python",
-      "pct": 12.9,
-      "repos": 6
+      "pct": 21.4,
+      "repos": 7
     },
     {
       "bytes": 65644,
       "color": "#f34b7d",
       "name": "C++",
-      "pct": 2.8,
+      "pct": 2.5,
       "repos": 1
     },
     {
       "bytes": 61223,
       "color": "#555555",
       "name": "C",
-      "pct": 2.6,
+      "pct": 2.3,
       "repos": 1
     },
     {
-      "bytes": 38661,
+      "bytes": 47933,
       "color": "#563d7c",
       "name": "CSS",
-      "pct": 1.6,
-      "repos": 2
+      "pct": 1.8,
+      "repos": 3
     },
     {
-      "bytes": 20076,
+      "bytes": 20907,
       "color": "#8b949e",
       "name": "YAML",
-      "pct": 0.9,
-      "repos": 4
+      "pct": 0.8,
+      "repos": 5
     },
     {
       "bytes": 10960,
       "color": "#e38c00",
       "name": "SQL",
-      "pct": 0.5,
+      "pct": 0.4,
       "repos": 1
     },
     {
       "bytes": 8709,
       "color": "#C1F12E",
       "name": "Batchfile",
-      "pct": 0.4,
+      "pct": 0.3,
       "repos": 2
     },
     {
@@ -1621,11 +1621,11 @@
       "repos": 1
     },
     {
-      "bytes": 752,
+      "bytes": 2303,
       "color": "#f1e05a",
       "name": "JavaScript",
-      "pct": 0.0,
-      "repos": 1
+      "pct": 0.1,
+      "repos": 2
     }
   ],
   "login": "MartXXeL",
@@ -1636,8 +1636,18 @@
       "description": "",
       "forks": 0,
       "language": "Python",
+      "name": "VintedBot",
+      "pushed_at": "2026-08-09",
+      "stars": 0,
+      "url": "https://github.com/MartXXeL/VintedBot"
+    },
+    {
+      "archived": false,
+      "description": "",
+      "forks": 0,
+      "language": "Python",
       "name": "MartXXeL",
-      "pushed_at": "2026-08-08",
+      "pushed_at": "2026-08-09",
       "stars": 0,
       "url": "https://github.com/MartXXeL/MartXXeL"
     },
@@ -1685,242 +1695,242 @@
   "source": "graphql",
   "streak": {
     "current": {
-      "end": "2026-08-08",
-      "length": 7,
+      "end": "2026-08-09",
+      "length": 8,
       "start": "2026-08-02"
     },
     "longest": {
-      "end": "2026-08-08",
-      "length": 7,
+      "end": "2026-08-09",
+      "length": 8,
       "start": "2026-08-02"
     }
   },
   "totals": {
-    "active_days": 26,
+    "active_days": 27,
     "best_day": {
       "count": 30,
       "date": "2026-08-05"
     },
-    "repos": 5,
-    "year": 173
+    "repos": 6,
+    "year": 203
   },
   "weeks": [
     {
-      "start": "2025-08-10",
+      "start": "2025-08-11",
       "total": 0
     },
     {
-      "start": "2025-08-17",
+      "start": "2025-08-18",
       "total": 0
     },
     {
-      "start": "2025-08-24",
+      "start": "2025-08-25",
       "total": 0
     },
     {
-      "start": "2025-08-31",
+      "start": "2025-09-01",
       "total": 0
     },
     {
-      "start": "2025-09-07",
+      "start": "2025-09-08",
       "total": 0
     },
     {
-      "start": "2025-09-14",
+      "start": "2025-09-15",
       "total": 0
     },
     {
-      "start": "2025-09-21",
+      "start": "2025-09-22",
       "total": 0
     },
     {
-      "start": "2025-09-28",
+      "start": "2025-09-29",
       "total": 0
     },
     {
-      "start": "2025-10-05",
+      "start": "2025-10-06",
       "total": 0
     },
     {
-      "start": "2025-10-12",
+      "start": "2025-10-13",
       "total": 0
     },
     {
-      "start": "2025-10-19",
+      "start": "2025-10-20",
       "total": 0
     },
     {
-      "start": "2025-10-26",
+      "start": "2025-10-27",
       "total": 0
     },
     {
-      "start": "2025-11-02",
-      "total": 0
-    },
-    {
-      "start": "2025-11-09",
+      "start": "2025-11-03",
       "total": 1
     },
     {
-      "start": "2025-11-16",
+      "start": "2025-11-10",
       "total": 0
     },
     {
-      "start": "2025-11-23",
+      "start": "2025-11-17",
       "total": 0
     },
     {
-      "start": "2025-11-30",
+      "start": "2025-11-24",
       "total": 0
     },
     {
-      "start": "2025-12-07",
+      "start": "2025-12-01",
+      "total": 0
+    },
+    {
+      "start": "2025-12-08",
       "total": 2
     },
     {
-      "start": "2025-12-14",
+      "start": "2025-12-15",
       "total": 0
     },
     {
-      "start": "2025-12-21",
+      "start": "2025-12-22",
       "total": 0
     },
     {
-      "start": "2025-12-28",
+      "start": "2025-12-29",
       "total": 0
     },
     {
-      "start": "2026-01-04",
+      "start": "2026-01-05",
       "total": 0
     },
     {
-      "start": "2026-01-11",
+      "start": "2026-01-12",
       "total": 0
     },
     {
-      "start": "2026-01-18",
+      "start": "2026-01-19",
       "total": 0
     },
     {
-      "start": "2026-01-25",
+      "start": "2026-01-26",
       "total": 0
     },
     {
-      "start": "2026-02-01",
+      "start": "2026-02-02",
       "total": 0
     },
     {
-      "start": "2026-02-08",
+      "start": "2026-02-09",
       "total": 0
     },
     {
-      "start": "2026-02-15",
+      "start": "2026-02-16",
       "total": 0
     },
     {
-      "start": "2026-02-22",
+      "start": "2026-02-23",
       "total": 0
     },
     {
-      "start": "2026-03-01",
+      "start": "2026-03-02",
       "total": 2
     },
     {
-      "start": "2026-03-08",
+      "start": "2026-03-09",
       "total": 0
     },
     {
-      "start": "2026-03-15",
+      "start": "2026-03-16",
       "total": 0
     },
     {
-      "start": "2026-03-22",
+      "start": "2026-03-23",
       "total": 15
     },
     {
-      "start": "2026-03-29",
+      "start": "2026-03-30",
       "total": 0
     },
     {
-      "start": "2026-04-05",
-      "total": 0
-    },
-    {
-      "start": "2026-04-12",
+      "start": "2026-04-06",
       "total": 2
     },
     {
-      "start": "2026-04-19",
+      "start": "2026-04-13",
       "total": 0
     },
     {
-      "start": "2026-04-26",
+      "start": "2026-04-20",
+      "total": 0
+    },
+    {
+      "start": "2026-04-27",
       "total": 18
     },
     {
-      "start": "2026-05-03",
+      "start": "2026-05-04",
       "total": 0
     },
     {
-      "start": "2026-05-10",
+      "start": "2026-05-11",
       "total": 0
     },
     {
-      "start": "2026-05-17",
+      "start": "2026-05-18",
       "total": 14
     },
     {
-      "start": "2026-05-24",
+      "start": "2026-05-25",
       "total": 0
     },
     {
-      "start": "2026-05-31",
+      "start": "2026-06-01",
       "total": 0
     },
     {
-      "start": "2026-06-07",
+      "start": "2026-06-08",
       "total": 0
     },
     {
-      "start": "2026-06-14",
-      "total": 11
+      "start": "2026-06-15",
+      "total": 12
     },
     {
-      "start": "2026-06-21",
-      "total": 3
+      "start": "2026-06-22",
+      "total": 2
     },
     {
-      "start": "2026-06-28",
+      "start": "2026-06-29",
       "total": 0
     },
     {
-      "start": "2026-07-05",
+      "start": "2026-07-06",
       "total": 0
     },
     {
-      "start": "2026-07-12",
+      "start": "2026-07-13",
       "total": 8
     },
     {
-      "start": "2026-07-19",
+      "start": "2026-07-20",
       "total": 0
     },
     {
-      "start": "2026-07-26",
-      "total": 0
+      "start": "2026-07-27",
+      "total": 3
     },
     {
-      "start": "2026-08-02",
-      "total": 97
+      "start": "2026-08-03",
+      "total": 124
     },
     {
-      "start": "2026-08-09",
+      "start": "2026-08-10",
       "total": 0
     }
   ],
   "window": {
     "days": 365,
-    "from": "2025-08-10",
-    "to": "2026-08-09"
+    "from": "2025-08-11",
+    "to": "2026-08-10"
   }
 }
