@@ -105,5 +105,5 @@ distintas, y acabas con un commit sin sentido cada noche.
 <hr>
 
 <div align="center">
-  <sub>Datos al 18/08/2026 · regenerado cada noche por <samp>.github/workflows/refresh.yml</samp> · sin dependencias de terceros</sub>
+  <sub>Datos al 19/08/2026 · regenerado cada noche por <samp>.github/workflows/refresh.yml</samp> · sin dependencias de terceros</sub>
 </div>
