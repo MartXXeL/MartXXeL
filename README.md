@@ -12,7 +12,7 @@
 
 <img src="./h-stats.svg" width="860" alt="stats">
 
-<img src="./stats.svg" width="860" alt="234 contribuciones en los últimos doce meses">
+<img src="./stats.svg" width="860" alt="249 contribuciones en los últimos doce meses">
 
 <div align="center">
   <img src="./rhythm.svg" width="426" alt="Actividad por día de la semana y por mes"> <img src="./langs.svg" width="426" alt="Lenguajes por bytes">
@@ -21,7 +21,7 @@
 <img src="./h-year.svg" width="860" alt="year">
 
 <div align="center">
-  <img src="./heatmap.svg" width="860" alt="Calendario de contribuciones, 234 en el último año">
+  <img src="./heatmap.svg" width="860" alt="Calendario de contribuciones, 249 en el último año">
 </div>
 
 <img src="./h-work.svg" width="860" alt="work">
@@ -105,5 +105,5 @@ distintas, y acabas con un commit sin sentido cada noche.
 <hr>
 
 <div align="center">
-  <sub>Datos al 12/11/2026 · regenerado cada noche por <samp>.github/workflows/refresh.yml</samp> · sin dependencias de terceros</sub>
+  <sub>Datos al 13/11/2026 · regenerado cada noche por <samp>.github/workflows/refresh.yml</samp> · sin dependencias de terceros</sub>
 </div>
